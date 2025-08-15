@@ -1,0 +1,371 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --blue-color: #1e3a8a;
+    --orange-color: rgb(249, 115, 22);
+    --white-color: rgb(255, 255, 255);
+    --gray-color-700: rgb(55, 65, 81);
+    --gray-color-800: rgb(31, 41, 55);
+    --gray-color-600: rgb(92, 100, 111);
+    /* ==== fonts ==== */
+    --roboto-font: "Roboto", sans-serif;
+    --poppins-font: "Poppins", sans-serif;
+    --sans-font: sans-serif;
+}
+
+.our-portfolio {
+       min-height: 50vh;
+     padding-top: 50px;
+    background: linear-gradient(150deg, #071335, #173ca1);
+    color: rgb(209 213 219);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: var(--sans-font);
+    font-size: 20px;
+    padding: 0px 15px;
+}
+
+.portfolio-title {
+    font-size: 55px;
+    font-weight: 700;
+}
+
+.orange {
+    color: var(--orange-color);
+}
+
+.para-port1 {
+    padding-top: 13px;
+}
+
+/* ======= pojects ======= */
+.projects {
+    background-color: rgb(17 24 39);
+    color: var(--white-color);
+    font-family: var(--sans-font);
+    padding: 60px 20px;
+}
+
+.project-language {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+}
+
+.lang-name1 {
+    background-color: var(--orange-color);
+    padding: 13px 20px;
+    border-radius: 24px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.lang-name {
+    background-color: var(--gray-color-700);
+    padding: 13px 20px;
+    border-radius: 22px;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: 400;
+    transition: all 0.3s ease;
+}
+
+.lang-name:hover {
+    background-color: #7c2d12;
+}
+
+.portfolio-wrapper {
+    padding-top: 60px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.project-one {
+    max-width: 460px;
+    width: 100%;
+    background-color: var(--gray-color-800);
+    border-radius: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.project-one:hover {
+    transform: translateY(-10px);
+}
+
+
+.img-container-proj {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    width: 100%;
+}
+
+.date {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    background-color: var(--orange-color);
+    border-radius: 14px;
+    padding: 8px 10px;
+    font-size: 12px;
+    z-index: 2;
+}
+
+.img-container-proj img {
+    width: 100%;
+    height: 200px;
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
+    transition: transform 0.3s ease-in-out;
+    cursor: pointer;
+    transform: scale(1);
+    object-fit: cover;
+    display: block;
+}
+
+
+
+.proj-content {
+    padding: 14px;
+}
+
+.proj-name {
+    padding-top: 8px;
+    font-size: 19px;
+    font-family: var(--roboto-font);
+}
+
+.proj-para {
+    padding: 10px 0px;
+    line-height: 25px;
+    font-size: 16px;
+    color: var(--gray-color-600);
+}
+
+.title {
+    padding-top: 5px;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--gray-color-600);
+}
+
+.proj-lang {
+    padding: 15px 0px;
+}
+
+.proj-lang span {
+    padding: 6px 8px;
+    background-color: var(--gray-color-700);
+    color: var(--white-color);
+    margin-right: 8px;
+    border-radius: 10px;
+    font-size: 14px;
+}
+
+.btn-proj {
+    padding: 14px;
+    width: 100%;
+    background-color: var(--orange-color);
+    color: var(--white-color);
+    border-radius: 5px;
+    border: none;
+    margin-top: 8px;
+    cursor: pointer;
+}
+
+.btn-proj:hover {
+    background-color: #ea580c;
+}
+
+/* ========== ready to start section ======== */
+.ready-start {
+    background-color: var(--gray-color-800);
+    color: var(--white-color);
+    padding: 40px 20px;
+    text-align: center;
+    font-family: var(--sans-font);
+}
+
+.name-ready {
+    padding-top: 8px;
+    font-size: 45px;
+    font-weight: 600;
+}
+
+.para-ready {
+    padding: 15px 0px;
+    font-size: 19.8px;
+}
+
+.start {
+    background-color: var(--orange-color);
+    color: var(--white-color);
+    padding: 18px 26px;
+    border: none;
+    border-radius: 25px;
+    font-size: 14px;
+    margin-right: 18px;
+    cursor: pointer;
+}
+
+.start:hover {
+    background-color: #ea580c;
+}
+
+.start1 {
+    background-color: transparent;
+    color: #ea580c;
+    padding: 18px 26px;
+    border: 2px solid #ea580c;
+    border-radius: 25px;
+    font-size: 14px;
+}
+
+.start1:hover {
+    background-color: var(--orange-color);
+    border: none;
+    color: var(--white-color);
+}
+
+/* XXL devices (1201px - 1400px) */
+@media (max-width: 1280px) {
+  .project-language {
+        gap: 25px;
+    }
+
+    .lang-name1 {
+        padding: 13px 18px;
+        font-size: 14px;
+    }
+    .lang-name {
+        padding: 13px 18px;
+        border-radius: 22px;
+        font-size: 14px;
+    }
+}
+
+/* Extra large devices (large desktops, 993px - 1200px) */
+@media (max-width: 1200px) {
+    .project-one {
+        max-width: 400px;
+    }
+
+    .project-language {
+        gap: 25px;
+    }
+
+    .lang-name1 {
+        padding: 13px 18px;
+        font-size: 14px;
+    }
+
+    .lang-name {
+        padding: 13px 18px;
+        border-radius: 22px;
+        font-size: 14px;
+    }
+}
+
+
+/* Large devices (laptops/desktops, 769px - 992px) */
+@media (max-width: 992px) {
+    .portfolio-wrapper {
+        gap: 25px;
+    }
+
+    .project-language {
+        gap: 25px;
+        flex-wrap: wrap;
+    }
+}
+
+/* Medium devices (landscape tablets, 601px - 768px) */
+@media (max-width: 768px) {
+    .portfolio-title {
+        font-size: 46px;
+    }
+
+    .project-language {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .proj-lang span {
+        font-size: 12px;
+    }
+
+    .portfolio-wrapper {
+        gap: 20px;
+    }
+
+    .project-one {
+        max-width: 100%;
+    }
+
+    .name-ready {
+        font-size: 35px;
+    }
+
+    .para-ready {
+        font-size: 17px;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 481px - 600px) */
+@media (max-width: 600px) {
+    .portfolio-title {
+        font-size: 35px;
+    }
+}
+
+/* Extra Small devices (phones, less than 480px) */
+@media (max-width: 480px) {
+    .portfolio-title {
+        font-size: 40px;
+    }
+
+    .project-language {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .proj-lang span {
+        display: inline-block;
+        margin-top: 8px;
+    }
+
+    .portfolio-wrapper {
+        padding-top: 30px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .project-one {
+        max-width: 100%;
+    }
+
+    .name-ready {
+        font-size: 30px;
+    }
+
+    .para-ready {
+        font-size: 16px;
+    }
+
+    .start,
+    .start1 {
+        width: 100%;
+        margin: 10px 0;
+    }
+}

@@ -1,0 +1,108 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root {
+    --backcolor: rgba(234, 112, 18, 0.964);
+    --color: white;
+     --darkcolor:rgb(20, 33, 51);
+    --lightcolor:rgb(32, 44, 61);
+    --minilightcolor: rgb(49, 62, 80);
+}
+
+.overallnav {
+    height: 60px;
+    width: 100%;
+    background: rgba(20, 33, 51, 0.9); /* transparent white */
+  backdrop-filter: blur(12px); /* blur background */
+  -webkit-backdrop-filter: blur(12px); 
+  position: fixed;
+    display: flex;
+    gap: 10px;
+    padding: 10px 10px;
+    color: orange;
+    justify-content: space-around;
+    z-index: 1000;
+
+}
+
+.brandname {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-style: italic;
+    
+}
+
+.navbarlink {
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+   
+}
+
+.navbarlink {
+  /* color: white; */
+
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.navlink{
+    
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.navlink:hover{
+    color: orangered;
+}
+
+@media screen and (min-width:600px) and (max-width:900px) {
+  
+    .navbarlink{
+        gap: 10px;
+    }
+    .brandname h1{
+        font-size: 26px;
+    }
+    .navlink {
+        font-size: 15px;
+    }
+}
+
+@media screen and (min-width:400px) and (max-width:600px) {
+  
+    .navbarlink{
+        gap: 10px;
+    }
+    .brandname h1{
+        font-size: 13px;
+        text-align: center;
+    }
+    .navlink {
+        font-size: 11px;
+    }
+  
+}
+
+@media screen and (min-width:300px) and (max-width:410px) {
+  
+    .navbarlink{
+        gap: 6px;
+    }
+    .brandname h1{
+        font-size: 13px;
+        text-align: center;
+    }
+    .navlink {
+        font-size: 9px;
+    }
+  
+}

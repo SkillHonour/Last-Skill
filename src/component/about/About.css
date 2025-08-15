@@ -1,0 +1,289 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.askill-honor {
+     min-height: 50vh;
+     padding-top: 50px;
+    background: linear-gradient(to right, #172752, #0c3dc5);
+    color: rgb(209 213 219);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: "Poppins", sans-serif;
+}
+
+.skill-name {
+    font-size: 55px;
+    padding: 10px 0;
+    font-weight: 700;
+}
+
+.skill-name>.color-skill {
+    color: rgb(249, 115, 22);
+}
+
+.skill-para1 {
+    font-size: 23px;
+    padding-bottom: 4px;
+    font-weight: 500;
+}
+
+.skill-para2 {
+    font-size: 24px;
+}
+
+/* ========== our story ======= */
+.our-story {
+    padding: 5rem 2rem 5rem 2rem;
+    text-align: center;
+    background-color: #0f172a;
+    color: rgb(209 213 219);
+}
+
+.story-name {
+    font-size: 45px;
+    font-family: "Poppins", sans-serif;
+}
+
+.color-skilled {
+    color: rgb(249, 115, 22);
+}
+
+.story-para1 {
+    font-family: "Lobster", sans-serif;
+    font-size: 19px;
+    padding-top: 35px;
+}
+
+.story-para2 {
+    font-family: "Lobster", sans-serif;
+    font-size: 19px;
+    padding-top: 6px;
+}
+
+.story-para3 {
+    font-family: "Lobster", sans-serif;
+    font-size: 19px;
+    padding-top: 6px;
+}
+
+.story-para4 {
+    padding-top: 52px;
+    font-family: "Lobster", sans-serif;
+    font-size: 19px;
+}
+
+.story-para5 {
+    font-family: "Lobster", sans-serif;
+    font-size: 19px;
+    padding-top: 6px;
+}
+
+.story-para6 {
+    font-family: "Lobster", sans-serif;
+    font-size: 19px;
+    padding-top: 6px;
+}
+
+/* ======= works ========= */
+.story-works {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 60px 10px 10px 10px;
+}
+
+.story-num {
+    font-size: 39px;
+    font-weight: 600;
+    color: rgb(249, 115, 22);
+    font-family: "Poppins", sans-serif;
+}
+
+.special-char {
+    font-size: 32px;
+}
+
+.counter-name {
+    padding-top: 10px;
+    font-size: 18px;
+    font-family: "Lobster", sans-serif;
+}
+
+/* ========= our mission ========== */
+.our-mission {
+    background-color: rgb(31 41 55);
+    padding: 80px 20px 20px 20px;
+    text-align: center;
+}
+
+.missioned-name {
+    font-family: "Poppins", sans-serif;
+    font-size: 45px;
+    color: #ffffff;
+}
+
+.mission-para1 {
+    padding-top: 15px;
+    font-size: 20px;
+    color: rgb(209 213 219);
+    font-family: "Lobster", sans-serif;
+}
+
+.mission-para2 {
+    padding-top: 5px;
+    font-size: 18px;
+    color: rgb(209 213 219);
+    font-family: "Lobster", sans-serif;
+}
+
+/* ================ card section =========== */
+.card-mission {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 80px 0px 40px 0px;
+    font-family: "Lobster", sans-serif;
+}
+
+.cards {
+    background: #0f172a;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: 330px;
+    padding: 45px 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+.iconics i {
+    background-color: rgb(249, 115, 22);
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 50%;
+    font-size: 22px;
+}
+
+.mission-nameed {
+    padding: 35px 0px 20px 0px;
+}
+
+.mission-paras {
+    line-height: 25px;
+    color: rgb(209 213 219);
+}
+
+/* =========== meet our team ======== */
+.our-team {
+    text-align: center;
+    background-color: #0f172a;
+    color: rgb(209 213 219);
+    padding: 60px 20px 40px 20px;
+    font-family: "Lobster", sans-serif;
+}
+
+.team-name {
+    font-size: 45px;
+    color: #ffffff;
+}
+
+.team-para1 {
+    padding-top: 15px;
+    font-size: 19px;
+}
+
+.team-para2 {
+    padding-top: 5px;
+    font-size: 19px;
+}
+
+.team-cards-container {
+   
+    /* display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 60px;    
+   
+    padding-bottom: 20px;
+}
+
+.card-container {
+    width: 330px;
+    background-color: rgb(31 41 55);
+    border-radius: 15px;
+}
+
+.img-container img {
+    width: 330px;
+    height: 250px;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+.card-content {
+    padding: 15px;
+}
+
+.em-name {
+    padding-top: 18px;
+}
+
+.role {
+    color: rgb(249, 115, 22);
+    padding: 12px 0px;
+}
+
+.para-card {
+    font-size: 14px;
+    line-height: 22px;
+}
+
+.card-icons {
+    padding: 20px 0px 15px 0px;
+}
+
+.icon-one i {
+    color: #ffffff;
+    background-color: rgb(249, 115, 22);
+    padding: 8px;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 50%;
+    margin-right: 13px;
+}
+
+.icon-two i {
+    color: #ffffff;
+    background-color: rgb(249, 115, 22);
+    padding: 8px;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 50%;
+}
+
+@media screen and (min-width:300px) and (max-width:600px) {
+    .skill-name {
+        font-size: 30px;
+    }
+    .askill-honor{
+        padding: 10px;
+    }
+    .story-works{
+        flex-wrap: wrap;
+    }
+    .skill-para1 {
+        font-size: 16px;
+    }
+    .skill-para2 {
+        font-size: 16px;
+    }
+}
