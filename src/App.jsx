@@ -12,7 +12,7 @@ import { BrowserRouter,Router,Route, Link, Routes } from "react-router-dom";
 
 export default function App(){
   return(
-     <BrowserRouter>
+     <HashRouter>
      <Navbar/>
      <ScrollToTop/>
      <Routes>
@@ -25,7 +25,7 @@ export default function App(){
         
      </Routes>
      <Footer/>
-     </BrowserRouter>
+     </HashRouter>
   );
 }
 
