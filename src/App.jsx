@@ -13,7 +13,7 @@ import { HashRouter as Router, Route, Routes } from "react-router-dom";
 
 export default function App(){
   return(
-     <HashRouter>
+     <Router>
      <Navbar/>
      <ScrollToTop/>
      <Routes>
@@ -25,7 +25,7 @@ export default function App(){
        <Route path="/testimonial" element={<Testimonials/>}/>
      </Routes>
      <Footer/>
-     </HashRouter>
+     </Router>
   );
 }
 
