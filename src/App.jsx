@@ -8,7 +8,7 @@ import Footer from "./component/Footer/foot";
 import Navbar from "./component/Navbar/Navbar";
 import Portfolio from "./component/Portfolio/portfolio";
 import ScrollToTop from "./component/Scrolltop/scrolltotop";
-import { BrowserRouter,Router,Route, Link, Routes } from "react-router-dom";
+import { HashRouter,Router,Route, Link, Routes } from "react-router-dom";
 
 export default function App(){
   return(
@@ -22,7 +22,6 @@ export default function App(){
         <Route path="/about" element={<About/>}/>
          <Route path="/content" element={<Contact/>}/>
        <Route path="/testimonial" element={<Testimonials/>}/>
-        
      </Routes>
      <Footer/>
      </HashRouter>
