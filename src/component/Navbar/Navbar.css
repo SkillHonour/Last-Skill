@@ -7,18 +7,20 @@
 :root {
     --backcolor: rgba(234, 112, 18, 0.964);
     --color: white;
-     --darkcolor:rgb(20, 33, 51);
-    --lightcolor:rgb(32, 44, 61);
+    --darkcolor: rgb(20, 33, 51);
+    --lightcolor: rgb(32, 44, 61);
     --minilightcolor: rgb(49, 62, 80);
 }
 
 .overallnav {
     height: 60px;
     width: 100%;
-    background: rgba(20, 33, 51, 0.9); /* transparent white */
-  backdrop-filter: blur(12px); /* blur background */
-  -webkit-backdrop-filter: blur(12px); 
-  position: fixed;
+    background: rgba(20, 33, 51, 0.9);
+    /* transparent white */
+    backdrop-filter: blur(12px);
+    /* blur background */
+    -webkit-backdrop-filter: blur(12px);
+    position: fixed;
     display: flex;
     gap: 10px;
     padding: 10px 10px;
@@ -29,80 +31,199 @@
 }
 
 .brandname {
-    
+
     display: flex;
     justify-content: center;
     align-items: center;
     font-style: italic;
-    
+    color: orange;
 }
 
+
+
 .navbarlink {
-    
+    /* color: white; */
+    width: 70%;
+    height: auto;
+
+    text-decoration: none;
+    font-weight: 500;
     display: flex;
+    gap: 20px;
+
     justify-content: center;
     align-items: center;
-    gap: 40px;
-   
 }
 
-.navbarlink {
-  /* color: white; */
+.navlink {
 
-  text-decoration: none;
-  font-weight: 500;
-}
-
-.navlink{
-    
     color: white;
     font-size: 18px;
     text-decoration: none;
 }
 
-.navlink:hover{
+.navlink:hover {
     color: orangered;
 }
 
+.navbarlink button {
+    border: none;
+    outline: none;
+    font-size: 30px;
+    color: white;
+    background-color: transparent;
+    display: none;
+}
+
+.button:hover {
+    color: orangered;
+}
+
+/* Base navbar */
+.overallnav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 25px;
+    background: #222;
+    color: white;
+    position: relative;
+}
+
+.brandname h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+/* Desktop Links */
+.navbarlink {
+    display: flex;
+    gap: 20px;
+}
+
+.navlink {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.navlink:hover {
+    color: #f39c12;
+}
+
+/* Mobile Menu Button */
+.menubar {
+    display: none;
+}
+
+.menubar button {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+/* Mobile Menu */
+.mobilemenu {
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background: #333;
+    border-radius: 8px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    z-index: 10;
+}
+
+.mobilelink {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+.mobilelink:hover {
+    color: #f39c12;
+}
+
+
+
 @media screen and (min-width:600px) and (max-width:900px) {
-  
-    .navbarlink{
+
+    .navbarlink {
         gap: 10px;
     }
-    .brandname h1{
+
+    .brandname h1 {
         font-size: 26px;
     }
+
     .navlink {
         font-size: 15px;
     }
 }
 
 @media screen and (min-width:400px) and (max-width:600px) {
-  
-    .navbarlink{
-        gap: 10px;
-    }
-    .brandname h1{
+
+   
+
+    .brandname h1 {
         font-size: 13px;
         text-align: center;
     }
+
     .navlink {
         font-size: 11px;
     }
-  
+
+    .menubar button {
+        display: block;
+    }
+
+    .navbarlink {
+         gap: 10px;
+        display: none;
+        /* Hide desktop links */
+    }
+
+    .menubar {
+        display: block;
+        /* Show hamburger menu */
+    }
+
 }
 
 @media screen and (min-width:300px) and (max-width:410px) {
-  
-    .navbarlink{
+
+    .navbarlink {
         gap: 6px;
     }
-    .brandname h1{
+
+    .brandname h1 {
         font-size: 13px;
         text-align: center;
     }
+
     .navlink {
         font-size: 9px;
     }
-  
+
+    .navbarlink {
+        display: none;
+        /* Hide desktop links */
+    }
+
+    .menubar {
+        display: block;
+        /* Show hamburger menu */
+    }
+
 }
+
+
+
+
+/* Responsive */

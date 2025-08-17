@@ -60,7 +60,7 @@ const About = () => {
         },
         {
             img: team1,
-            name: "David Kim",
+            name: "Praveen Kumar R",
             role: "Marketing Manager",
             desc: "David specializes in digital marketing strategies and has helped over 100 businesses grow their online presence.",
             icon1: "ri-linkedin-fill",
@@ -71,7 +71,7 @@ const About = () => {
         <>
             <div className="about-container">
                 {/* ========== About Skill Honor ========== */}
-                <div className="askill-honor">
+                <div cl                              uu assName="askill-honor">
                     <h1 className="skill-name">About <span className='color-skill'>Skill Honor</span></h1>
                     <p className="skill-para1">Learn about our mission, values, and the talented team behind our</p>
                     <p className="skill-para2">innovative technology soluctions.</p>
