@@ -45,21 +45,21 @@ const About = () => {
         {
             img: team3,
             name: "Selvaganesan A",
-            role: "CTO & Software Developer",
-            desc: "8 years of full-stack development expertise, specializing in modern web technologies and cloud architecture.",
+            role: "CTO & Soft Developer",
+            desc: "Michael brings 8 years of full-stack development expertise, specializing in modern web technologies and cloud architecture.",
             icon1: "ri-linkedin-fill",
             icon2: "ri-twitter-fill",
         },
               {
-            img: team4,
+            img: team3,
             name: "Sanjay Kumar S",
-            role: "CTO & Developer",
-            desc: "8 years of full-stack development expertise, specializing in modern web technologies and cloud architecture.",
+            role: "CTO & Lead Developer",
+            desc: "Michael brings 8 years of full-stack development expertise, specializing in modern web technologies and cloud architecture.",
             icon1: "ri-linkedin-fill",
             icon2: "ri-twitter-fill",
         },
         {
-            img: team5,
+            img: team4,
             name: "Ashwin R",
             role: "Creative Director",
             desc: "Emily leads our design team with 7 years of experience in branding, UI/UX design, and digital marketing campaigns.",
@@ -70,28 +70,11 @@ const About = () => {
             img: team1,
             name: "Praveen Kumar R",
             role: "Marketing Manager",
-            desc: "specializes in digital marketing strategies and has helped over 100 businesses grow their online presence.",
-            icon1: "ri-linkedin-fill",
-            icon2: "ri-twitter-fill",
-        },
-        {
-            img: team6,
-            name: "Gopi",
-            role: "Graphics designer",
-            desc: "specializes in graphics designe and has helped over 100 businesses grow their online presence.",
-            icon1: "ri-linkedin-fill",
-            icon2: "ri-twitter-fill",
-        }, 
-        {
-            img: team7,
-            name: "Deepak Kumar",
-            role: "PC buider",
-            desc: "specializes in PC builder strategies and has helped over 100 businesses grow their online presence.",
+            desc: "David specializes in digital marketing strategies and has helped over 100 businesses grow their online presence.",
             icon1: "ri-linkedin-fill",
             icon2: "ri-twitter-fill",
         },
     ];
-
     return (
         <>
             <div className="about-container">
