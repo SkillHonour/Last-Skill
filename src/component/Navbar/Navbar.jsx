@@ -18,7 +18,7 @@ export default function Navbar() {
         <Link className="navlink" to={"/service"}>Service</Link>
         <Link className="navlink" to={"/portfolio"}>Portfolio</Link>
         <Link className="navlink" to={"/about"}>About</Link>
-        <Link className="navlink" to={"/content"}>Content</Link>
+        <Link className="navlink" to={"/content"}>Contact</Link>
         <Link className="navlink" to={"/testimonial"}>Testimonial</Link>
       </div>
 
@@ -36,7 +36,7 @@ export default function Navbar() {
           <Link className="mobilelink" to={"/service"} onClick={() => setMenuOpen(false)}>Service</Link>
           <Link className="mobilelink" to={"/portfolio"} onClick={() => setMenuOpen(false)}>Portfolio</Link>
           <Link className="mobilelink" to={"/about"} onClick={() => setMenuOpen(false)}>About</Link>
-          <Link className="mobilelink" to={"/content"} onClick={() => setMenuOpen(false)}>Content</Link>
+          <Link className="mobilelink" to={"/content"} onClick={() => setMenuOpen(false)}>Contact</Link>
           <Link className="mobilelink" to={"/testimonial"} onClick={() => setMenuOpen(false)}>Testimonial</Link>
         </div>
       )}
