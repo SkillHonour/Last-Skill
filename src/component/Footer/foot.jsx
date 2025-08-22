@@ -44,14 +44,14 @@ export default function Footer() {
                         <Link className="link" to={"/service"}>Service</Link>
                         <Link className="link" to={"/portfolio"}>Portfolio</Link>
                         <Link className="link" to={'/about'}>About</Link>
-                        <Link className="link" to={'/content'}>Content</Link>
+                        <Link className="link" to={'/content'}>Contact</Link>
                         <Link className="link" to={'/testimonial'}>Testimonial</Link>
                     </div>
 
                     <div className="Contact">
                         <h1>Contact</h1>
-                        <p className="link"> <span><FaLocationDot /></span> 123 Tech Street, Digital City, DC 12345</p>
-                        <p className="link"><span><IoCall /></span> +1 (555) 123-4567</p>
+                        <p className="link"> <span><FaLocationDot /></span> Chennai,Tamil Nadu , India </p>
+                        <p className="link"><span><IoCall /></span> +91 94454 62917</p>
                         <Link to="/" className="link"> <span><MdMail /></span> info@skillhonor.com</Link>
                     </div>
                 </div>
