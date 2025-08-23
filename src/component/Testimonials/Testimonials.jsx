@@ -1,68 +1,79 @@
 import React, { useState } from "react";
-import { Helmet } from "react-helmet";
 import "./Testimonials.css";
-// import images
+// import img1 from './assets/women1.jpg'
 import img1 from '../../assets/testimonial/women1.jpg';
 import img2 from '../../assets/testimonial/women4.jpg';
 import img3 from '../../assets/testimonial/women2.jpg';
 import img4 from '../../assets/testimonial/women5.jpg';
 import img5 from '../../assets/testimonial/women3.jpg';
 import img6 from '../../assets/testimonial/women6.jpg';
-import team1 from '../../assets/team/team1.jpg';
-import team2 from '../../assets/team/team2.jpg';
-import team3 from '../../assets/team/team3.jpg';
-import team4 from '../../assets/team/team4.jpg';
 
-const teamData = [
-  {
-    staring: "⭐️⭐️⭐️⭐️⭐️",
-    para: "Skill Honour transformed our online presence completely. Their web development team created a stunning, responsive website that increased our conversions by 300%. The attention to detail and technical expertise were outstanding.",
-    name: "Rithish",
-    projects: "E-commerce Platform Development",
-    results: "300% increase in conversions",
-    profile: img1
-  },
-  {
-    staring: "⭐️⭐️⭐️⭐️⭐️",
-    para: "The digital marketing campaign exceeded all our expectations. Our social media engagement increased by 250% and lead generation improved by 180%. The team's strategic approach was exactly what we needed.",
-    name: "Saravanan",
-    projects: "Comprehensive Digital Marketing Campaign",
-    results: "250% increase in social engagement",
-    profile: img2
-  },
-  {
-    staring: "⭐️⭐️⭐️⭐️⭐️",
-    para: "Our custom mobile application was delivered on time and exceeded all requirements. The user experience is exceptional, and our app store ratings improved significantly. Highly recommend their development services.",
-    name: "Balaji",
-    projects: "Mobile Banking Application",
-    results: "4.8/5 app store rating",
-    profile: img3
-  },
-  {
-    staring: "⭐️⭐️⭐️⭐️⭐️",
-    para: "The branding package was absolutely perfect. Our new logo and brand identity have received countless compliments from clients. The creative team understood our vision perfectly and brought it to life beautifully.",
-    name: "Shai",
-    projects: "Complete Brand Identity Package",
-    results: "Award-winning brand design",
-    profile: img4
-  },
-  {
-    staring: "⭐️⭐️⭐️⭐️⭐️",
-    para: "The cloud migration was seamless and professionally executed. Our system performance improved dramatically, and we've experienced zero downtime since the migration. Their ongoing support is exceptional.",
-    name: "Gopalakrishan",
-    projects: "Enterprise Cloud Migration",
-    results: "99.9% uptime guarantee achieved",
-    profile: img5
-  },
-  {
-    staring: "⭐️⭐️⭐️⭐️⭐️",
-    para: "My custom gaming PC build is absolutely incredible! The performance is outstanding, and the RGB lighting setup is perfect. The team understood exactly what I needed for streaming and gaming at the highest level.",
-    name: "Arun",
-    projects: "High-Performance Gaming PC Build",
-    results: "4K gaming at 144fps",
-    profile: img6
-  },
-];
+
+
+  const teamData = [
+    {
+      staring: "⭐️⭐️⭐️⭐️⭐️",
+      para: "Skill Honor transformed our online presence completely. Their web development team created a stunning, responsive website that increased our conversions by 300%. The attention to detail and technical expertise were outstanding.",
+      name: "Rithish",
+      projects: "E-commerce Platform Development",
+      results: "300% increase in conversions",
+      profile: img1
+    },
+    {
+      staring: "⭐️⭐️⭐️⭐️⭐️",
+      para: "The digital marketing campaign exceeded all our expectations. Our social media engagement increased by 250% and lead generation improved by 180%. The team's strategic approach was exactly what we needed.",
+      name: " Saravanan",
+      projects: "Comprehensive Digital Marketing Campaign",
+      results: "250% increase in social engagement",
+      profile: img2
+    },
+    {
+      staring: "⭐️⭐️⭐️⭐️⭐️",
+      para: "Our custom mobile application was delivered on time and exceeded all requirements. The user experience is exceptional, and our app store ratings improved significantly. Highly recommend their development services.",
+      name: "Balaji",
+      projects: "Mobile Banking Application",
+      results: "4.8/5 app store rating",
+      profile: img3
+    },
+    {
+      staring: "⭐️⭐️⭐️⭐️⭐️",
+      para: "The branding package was absolutely perfect. Our new logo and brand identity have received countless compliments from clients. The creative team understood our vision perfectly and brought it to life beautifully.",
+      name: "Shai",
+      projects: "Complete Brand Identity Package",
+      results: "Award-winning brand design",
+      profile: img4
+    },
+    {
+      staring: "⭐️⭐️⭐️⭐️⭐️",
+      para: "The cloud migration was seamless and professionally executed. Our system performance improved dramatically, and we've experienced zero downtime since the migration. Their ongoing support is exceptional.",
+      name: "Gopalakrishan",
+      projects: "Enterprise Cloud Migration",
+      results: "99.9% uptime guarantee achieved",
+      profile: img5
+    },
+    {
+      staring: "⭐️⭐️⭐️⭐️⭐️",
+      para: "My custom gaming PC build is absolutely incredible! The performance is outstanding, and the RGB lighting setup is perfect. The team understood exactly what I needed for streaming and gaming at the highest level.",
+      name: "Arun",
+      projects: "High-Performance Gaming PC Build",
+      results: "4K gaming at 144fps",
+      profile: img6
+    },
+  ];
+
+  const Testimonials = () => {
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const prevTestimonial = () => {
+    setCurrentIndex((prev) => (prev === 0 ? teamData.length - 1 : prev - 1));
+  };
+
+  const nextTestimonial = () => {
+    setCurrentIndex((prev) => (prev === teamData.length - 1 ? 0 : prev + 1));
+  };
+
+  const currentMember = teamData[currentIndex];
+
 
 const cardData = [
   {
@@ -99,33 +110,10 @@ const cardData = [
   },
 ];
 
-const Testimonials = () => {
-  const [currentIndex, setCurrentIndex] = useState(0);
-
-  const prevTestimonial = () => {
-    setCurrentIndex((prev) => (prev === 0 ? teamData.length - 1 : prev - 1));
-  };
-
-  const nextTestimonial = () => {
-    setCurrentIndex((prev) => (prev === teamData.length - 1 ? 0 : prev + 1));
-  };
-
-  const currentMember = teamData[currentIndex];
+  
 
   return (
     <>
-      <Helmet>
-        <title>Skill Honour | Client Testimonials & Team Overview</title>
-        <meta
-          name="description"
-          content="Read client reviews and meet our expert team at Skill Honour. See how we deliver exceptional web development, digital marketing, and design services to drive results."
-        />
-        <meta
-          name="keywords"
-          content="Skill Honour, client testimonials, web development, digital marketing, graphic design, WordPress, team, success stories"
-        />
-      </Helmet>
-
       <header>
         {/* ============== client container ============= */}
         <div className="client-container">
@@ -134,7 +122,7 @@ const Testimonials = () => {
           </h1>
           <p className="client-para">
             Hear from our satisfied clients about their experience working with
-            Skill Honour and the results we've achieved together.
+            Skill Honor and the results we've achieved together.
           </p>
         </div>
 
@@ -148,6 +136,12 @@ const Testimonials = () => {
             <h3 className="stared">{currentMember.staring}</h3>
             <p className="profile-para">{currentMember.para}</p>
             <hr className="custom-hr" />
+            {/* ========== clients ========= */}
+            <div className="clients">
+              <h4 className="clients-name">{currentMember.name}</h4>
+              <h5 className="client-role">{currentMember.role}</h5>
+              <h5 className="client-company">{currentMember.company}</h5>
+            </div>
             {/* ======== projects and results ========== */}
             <div className="project-result">
               <div className="project">
@@ -187,31 +181,33 @@ const Testimonials = () => {
           </div>
         </div>
 
-        {/* ======== team cards ========= */}
+        {/* ========clients says ========= */}
         <div className="clients-says">
           <h3 className="says-title">
-            Meet Our <span className="color">Team</span>
+            What Our <span className="color">Clients Say</span>
           </h3>
           <p className="para-says">
-            Our expert professionals drive results and innovation for our clients.
+            Join our growing list of satisfied clients who have transformed their
+            businesses with our innovative solutions.
           </p>
+          {/* ======= cards ===== */}
           <div className="cards-container">
             {cardData.map((card, index) => (
               <div className="card" key={index}>
+                {/* ========= first ======= */}
                 <div className="img-content">
                   <div className="imged">
-                    <img src={card.img} alt={card.name} />
+                    <img src={card.image} alt={card.name} />
                   </div>
                   <div className="content-img">
                     <h4 className="name-says">{card.name}</h4>
                     <h5 className="role-says">{card.role}</h5>
-                    <p className="para-desc">{card.desc}</p>
-                    <div className="social-icons">
-                      <i className={card.icon1}></i>
-                      <i className={card.icon2}></i>
-                    </div>
                   </div>
                 </div>
+                <div className="stars-says">{card.star}</div>
+                <p className="para-desc">{card.description}</p>
+                <hr className="chn-hr" />
+                <div className="roles-card">{card.domain}</div>
               </div>
             ))}
           </div>

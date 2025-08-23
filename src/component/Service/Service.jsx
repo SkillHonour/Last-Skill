@@ -1,6 +1,6 @@
 import React from 'react';
 import { Helmet } from 'react-helmet-async';
-import './portfflio.css';
+import "../Portfolio/portfolio.css";
 import project1 from '../../assets/portfolio/proj1.jpg';
 import project2 from '../../assets/portfolio/proj2.webp';
 import project3 from '../../assets/portfolio/proj3.webp';
