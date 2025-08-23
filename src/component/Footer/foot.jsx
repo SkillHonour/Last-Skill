@@ -13,19 +13,36 @@ export default function Footer() {
             <div className="Foot-overall">
                 <div className="foot-top">
                     <div className="skillhonor">
-                        <h1>Skill Honor</h1>
+                        <h1>Skill Honour</h1>
                         <div className="skillhonor-p">
                             <p>
                                 Delivering exceptional tech solutions with skill, honor, and innovation.
                                 Your trusted partner for digital transformation.
                             </p>
                         </div>
-                        <div className="skillhonor-icon">
-                            <div className="icon1"><FaFacebookF /></div>
-                            <div className="icon1"><FaXTwitter /></div>
-                            <div className="icon1"><FaInstagram /></div>
-                            <div className="icon1"><FaLinkedinIn /></div>
-                        </div>
+                      <div className="skillhonor-icon">
+  <div className="icon1">
+    <a href="https://www.facebook.com/profile.php?id=61579133814913" target="_blank" rel="noopener noreferrer">
+      <FaFacebookF />
+    </a>
+  </div>
+  <div className="icon1">
+    <a href="https://twitter.com/yourprofile" target="_blank" rel="noopener noreferrer">
+      <FaXTwitter />
+    </a>
+  </div>
+  <div className="icon1">
+    <a href="https://www.instagram.com/skillhonour?igsh=MnJqd21jcXJsbnZh" target="_blank" rel="noopener noreferrer">
+      <FaInstagram />
+    </a>
+  </div>
+  <div className="icon1">
+    <a href="www.linkedin.com/in/skill-honour-89353b37a" target="_blank" rel="noopener noreferrer">
+      <FaLinkedinIn />
+    </a>
+  </div>
+</div>
+
                     </div>
 
                     <div className="services">
@@ -52,14 +69,14 @@ export default function Footer() {
                         <h1>Contact</h1>
                         <p className="link"> <span><FaLocationDot /></span> Chennai,Tamil Nadu , India </p>
                         <p className="link"><span><IoCall /></span> +91 94454 62917</p>
-                        <Link to="/" className="link"> <span><MdMail /></span> info@skillhonor.com</Link>
+                        <Link to="/" className="link"> <span><MdMail /></span> skillhonour.com</Link>
                     </div>
                 </div>
 
                 <div className="foot-middle-line"></div>
 
                 <div className="foot-end-copy-right">
-                    <p>© 2025 Skill Honor. All rights reserved. Built with skill and honor.</p>
+                    <p>© 2025 Skill Honour. All rights reserved. Built with skill and honour.</p>
                 </div>
             </div>
         </footer>

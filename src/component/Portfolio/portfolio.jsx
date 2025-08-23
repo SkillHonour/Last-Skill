@@ -6,6 +6,7 @@ import project3 from '../../assets/portfolio/proj3.webp';
 import project4 from '../../assets/portfolio/proj4.webp';
 import project5 from '../../assets/portfolio/proj5.jpg';
 import project6 from '../../assets/portfolio/proj6.webp';
+import { Helmet } from "react-helmet-async";
 
 const Portfolio = () => {
     const cardData = [
@@ -79,6 +80,21 @@ const Portfolio = () => {
     
     return (
         <div className="portfolio-container">
+
+            {/* ✅ SEO Meta Tags */}
+            <Helmet>
+                <title>Skill Honour Portfolio | Web Development, Digital Marketing & Cloud Solutions</title>
+                <meta 
+                    name="description" 
+                    content="Discover Skill Honour's portfolio: web development, SEO, social media marketing, mobile apps, branding, cloud migration & custom PC builds. Trusted by global clients." 
+                />
+                <meta 
+                    name="keywords" 
+                    content="web development portfolio, digital marketing case studies, SEO projects, social media campaigns, cloud migration services, app development India, branding design portfolio, custom PC build services, Skill Honour projects" 
+                />
+                <link rel="canonical" href="https://www.skillhonour.com/portfolio" />
+            </Helmet>
+
             {/* Header */}
             <div className="our-portfolio">
                 <h1 className="portfolio-title">
@@ -89,6 +105,7 @@ const Portfolio = () => {
                 </p>
                 <p className="para-port2">digital presence.</p>
             </div>
+
             <div className="projects">
                 {/* Categories */}
                 <div className="project-language">
@@ -125,6 +142,7 @@ const Portfolio = () => {
                     ))}
                 </div>
             </div>
+
             {/* Ready to start section */}
             <div className="ready-start">
                 <h3 className="name-ready">Ready to Start Your Project?</h3>

@@ -1,219 +1,176 @@
-import React, { useState } from "react";
-import '../Service/Service.css'
-import { DiCode } from "react-icons/di";
-import web from "../../assets/service/serv-web.jpg";
-import cloud from "../../assets/service/serv-cloud.jpg"
-import custom from "../../assets/service/serv-custom.jpg"
-import graphic from "../../assets/service/serv-graphic.jpg"
-import market from "../../assets/service/serv-market.jpeg"
-import pcc from "../../assets/service/serv-pc.jpg"
+import React from 'react';
+import { Helmet } from 'react-helmet-async';
+import './portfflio.css';
+import project1 from '../../assets/portfolio/proj1.jpg';
+import project2 from '../../assets/portfolio/proj2.webp';
+import project3 from '../../assets/portfolio/proj3.webp';
+import project4 from '../../assets/portfolio/proj4.webp';
+import project5 from '../../assets/portfolio/proj5.jpg';
+import project6 from '../../assets/portfolio/proj6.webp';
 
-
-
-
-export default function Service() {
-    const [firsthand, setfirsthand] = useState(0);
-
-    let firstval = [{
-        name: "Web Development",
-        para: "Creating modern, responsive websites and web applications using cutting-edge technologies. We build everything from simple landing pages to complex e-commerce platforms and enterprise web applications.",
-        type: ["Responsive Design", "SEO Optimization", "Cross-browser Compatibility", "Modern Frameworks (React, Next.js)", "Performance Focused", "API Integration"],
-        pc: web,
-        skill: ["HTML", "css", "Bootstrap", "Javascript", "React", "Node.js", "Express.js",]
-    },
-    {
-        name: "Digital Marketing",
-        para: "Comprehensive digital marketing strategies to boost your online presence and drive meaningful engagement with your target audience. We help businesses grow through data-driven marketing campaigns.",
-        type: ["Social Media Management", "SEO & SEM", "Content Strategy", "Analytics & Reporting", "Email Marketing", "PPC Campaigns"],
-        pc: market,
-        skill: ["Google Analytics", "Google Ads", "Facebook Ads", "HubSpot", "Mailchimp", "SEMrush"]
-    },
-    {
-        name: "Custom Application Development",
-        para: "Tailored software solutions designed specifically for your business needs. From mobile apps to enterprise systems, we create applications that solve real business problems.",
-        type: ["Mobile Development", "Desktop Applications", "API Integration", "Database Design", "Cloud Integration", "Security Implementation"],
-        pc: custom,
-        skill: ["React Native", "Flutter", "Swift", "Kotlin", "Python", "Java"]
-    },
-    {
-        name: "Graphic Design",
-        para: "Creative visual solutions that communicate your brand message effectively. We design everything from logos and branding materials to marketing collateral and digital assets.",
-        type: ["Logo Design", "Brand Identity", "Marketing Materials", "UI/UX Design", "Print Design", "Digital Assets"],
-        pc: graphic,
-        skill: ["Adobe Creative Suite", "Figma", "Sketch", "Canva", "Illustrator", "Photoshop"]
-    },
-    {
-        name: "PC build & repair service",
-        para: "Professional computer building and repair services for businesses and individuals. From custom gaming rigs to enterprise workstations, we handle all your hardware needs.",
-        type: ["Custom PC Building", "Hardware Troubleshooting", "System Optimization", "Upgrade Services", "Maintenance Plans", "Emergency Repairs"],
-        pc: pcc,
-        skill: ["Intel/AMD CPUs", "NVIDIA/AMD GPUs", "DDR4/DDR5 RAM", "SSD Storage", "Custom Cooling", "RGB Lighting"]
-    },
-    {
-        name: "Cloud Hosting & Migration",
-        para: "Secure and scalable cloud solutions for your business applications and data. We help you migrate to the cloud and optimize your infrastructure for maximum performance.",
-        type: [" Cloud Migration", "Server Management", "Security Implementation", "Backup Solutions", "Performance Optimization", "24/7 Monitoring"],
-        pc: cloud,
-        skill: [" AWS", "Google Cloud", "Microsoft Azure", "Docker", "Kubernetes", "Terraform"]
-    }
-    ];
+const Portfolio = () => {
+    const cardData = [
+        {
+          projname: "E-Commerce Platform",
+          description: "Modern e-commerce website with shopping cart, payment, and admin dashboard.",
+          client: "Client: TechStore Inc.",
+          lang1: "React",
+          lang2: "Next.js",
+          lang3: "Stripe",
+          lang4: "MongoDB",
+          btn: "View Details",
+          img: project1,
+        },
+        {
+          projname: "Social Media Campaign",
+          description: "Marketing campaign that increased brand awareness by 250%.",
+          client: "Client: Fashion Forward",
+          lang1: "Facebook Ads",
+          lang2: "Instagram",
+          lang3: "Analytics",
+          lang4: "Hootsuite",
+          btn: "View Details",
+          img: project2,
+        },
+        {
+          projname: "Mobile Banking App",
+          description: "Secure banking app with biometric login and real-time updates.",
+          client: "Client: SecureBank",
+          lang1: "React Native",
+          lang2: "Firebase",
+          lang3: "Auth",
+          lang4: "Encryption",
+          btn: "View Details",
+          img: project3,
+        },
+        {
+          projname: "Brand Identity Design",
+          description: "Complete brand identity package for startups.",
+          client: "Client: StartupXYZ",
+          lang1: "Illustrator",
+          lang2: "Photoshop",
+          lang3: "InDesign",
+          lang4: "Figma",
+          btn: "View Details",
+          img: project4,
+        },
+        {
+          projname: "Gaming PC Build",
+          description: "Custom high-performance gaming setup.",
+          client: "Client: Pro Gamer",
+          lang1: "RTX 4090",
+          lang2: "Intel i9",
+          lang3: "DDR5 RAM",
+          lang4: "Custom Cooling",
+          btn: "View Details",
+          img: project5,
+        },
+        {
+          projname: "Cloud Migration Project",
+          description: "Cloud migration with 99.9% uptime guarantee.",
+          client: "Client: Enterprise Corp",
+          lang1: "AWS",
+          lang2: "Docker",
+          lang3: "Kubernetes",
+          lang4: "Terraform",
+          btn: "View Details",
+          img: project6,
+        },
+      ];
+    
     return (
-        <div className="serviceoverall">
+        <div className="portfolio-container">
 
-            {/* Servicetopic  */}
+            {/* ✅ SEO + Open Graph + Twitter Meta Tags */}
+            <Helmet>
+                {/* Basic SEO */}
+                <title>Portfolio | Skill Honour - Web Development, Digital Marketing & Cloud Solutions</title>
+                <meta 
+                    name="description" 
+                    content="Explore Skill Honour's portfolio featuring top projects in web development, digital marketing, mobile apps, PC builds, and cloud migration. See how we deliver success for businesses." 
+                />
+                <meta 
+                    name="keywords" 
+                    content="Skill Honour portfolio, web development company India, digital marketing agency, custom application development, cloud migration services, e-commerce website, SEO company, mobile app development, branding design, gaming PC build" 
+                />
+                <meta name="author" content="Skill Honour" />
 
-            <div className="servicetopic">
-                <h1>Our <span> Services</span></h1>
-                <p>Comprehensive technology solutions designed to transform your business and drive growth in the digital age.</p>
+                {/* Open Graph (Facebook, LinkedIn, WhatsApp) */}
+                <meta property="og:title" content="Skill Honour Portfolio - Web Development, Digital Marketing & Cloud Services" />
+                <meta property="og:description" content="Discover Skill Honour's successful projects in websites, apps, branding, SEO, and cloud hosting. We build digital success stories." />
+                <meta property="og:image" content="https://www.skillhonour.com/assets/portfolio/og-preview.jpg" />
+                <meta property="og:url" content="https://www.skillhonour.com/portfolio" />
+                <meta property="og:type" content="website" />
 
+                {/* Twitter Card */}
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta name="twitter:title" content="Skill Honour Portfolio - Web Development & Digital Marketing" />
+                <meta name="twitter:description" content="See Skill Honour’s portfolio of successful projects in web dev, digital marketing, branding, cloud hosting & gaming PCs." />
+                <meta name="twitter:image" content="https://www.skillhonour.com/assets/portfolio/og-preview.jpg" />
+                <meta name="twitter:site" content="@SkillHonour" />
+            </Helmet>
+
+            {/* Header */}
+            <div className="our-portfolio">
+                <h1 className="portfolio-title">
+                    Our <span className="orange">Portfolio</span>
+                </h1>
+                <p className="para-port1">
+                    Explore our successful projects and see how we've helped businesses transform their
+                </p>
+                <p className="para-port2">digital presence.</p>
             </div>
 
-            {/* Firstservice  */}
-
-            <div className="firstservice">
-                <div className="firsthanding">
-                    <button onClick={() => setfirsthand(0)} >Web Development</button>
-                    <button onClick={() => setfirsthand(1)} >Digital Marketing</button>
-                    <button onClick={() => setfirsthand(2)}>Custom Application Development</button>
-                    <button onClick={() => setfirsthand(3)}>Graphic Design</button>
-                    <button onClick={() => setfirsthand(4)}>PC build & repair service</button>
-                    <button onClick={() => setfirsthand(5)}>Cloud Hosting & Migration</button>
+            <div className="projects">
+                {/* Categories */}
+                <div className="project-language">
+                    <h4 className="lang-name1">All Projects</h4>
+                    <h4 className="lang-name">Web Development</h4>
+                    <h4 className="lang-name">Digital Marketing</h4>
+                    <h4 className="lang-name">Custom Applications</h4>
+                    <h4 className="lang-name">Graphic Design</h4>
+                    <h4 className="lang-name">PC Build & Repair</h4>
+                    <h4 className="lang-name">Cloud Hosting</h4>
                 </div>
 
-                <div className="firstcontent">
-                    <div className="onecontent">
-                        <div className="onecontentleft">
-                            <div className="onecontenttopic">
-                                <span>{<DiCode />} </span>
-                                <h1> {firstval[firsthand].name}</h1>
+                {/* Projects Grid */}
+                <div className="portfolio-wrapper">
+                    {cardData.map((card, index) => (
+                        <div className="project-one" key={index}>
+                            <div className="img-container-proj">
+                                <h4 className="date">2024</h4>
+                                <img src={card.img} alt={card.projname} />
                             </div>
-                            <p>{firstval[firsthand].para}</p>
-                            <ul>
-                                {firstval[firsthand].type.map((item1, i) => (
-                                    <li key={i}>{item1}</li>
-                                ))}
-
-                            </ul>
-                        </div>
-                        <div className="onecontentright">
-                            <img src={firstval[firsthand].pc} alt="" />
-                            <h1>Technologies We Use:</h1>
-                            <div className="onecontentright-cont">
-                                <ul>
-                                    {firstval[firsthand].skill.map((item2, j) => (
-                                        <li key={j}>{item2} </li>
-                                    ))}
-
-
-                                </ul>
+                            <div className="proj-content">
+                                <h5 className="proj-name">{card.projname}</h5>
+                                <p className="proj-para">{card.description}</p>
+                                <h6 className="title">{card.client}</h6>
+                                <div className="proj-lang">
+                                    <span>{card.lang1}</span>
+                                    <span>{card.lang2}</span>
+                                    <span>{card.lang3}</span>
+                                    <span>{card.lang4}</span>
+                                </div>
+                                <button className="btn-proj">{card.btn}</button>
                             </div>
                         </div>
-
-
-
-                    </div>
+                    ))}
                 </div>
             </div>
 
-            {/* Second service  */}
-
-            <div className="secondservice">
-
-              <div className="secondservicetitle">
-                <h1>All Our <span> Services</span></h1>
-                <p>Browse through our complete range of technology services designed to meet your business needs.</p>
-              </div>
-                <div className="secondboxall">
-                    <div className="secondbox secondbox1">
-                        <img src={firstval[0].pc} alt="" />
-                        <p>{firstval[0].para}</p>
-                        <ul>
-                            {firstval[0].type.map((secitem, secind) => (
-                                <li key={secind}>{secitem}</li>
-                            ))}
-                        </ul>
-                        <div className="secondbox-button">
-                            <button>View More</button>
-                            <button>Get Quote</button>
-                        </div>
-                    </div>
-                    <div className="secondbox secondbox2">
-                        <img src={firstval[1].pc} alt="" />
-                        <p>{firstval[1].para}</p>
-                        <ul>
-                            {firstval[1].type.map((secitem, secind) => (
-                                <li key={secind}>{secitem}</li>
-                            ))}
-                        </ul>
-                        <div className="secondbox-button">
-                            <button>View More</button>
-                            <button>Get Quote</button>
-                        </div>
-                    </div>
-
-                    <div className="secondbox secondbox3">
-
-                        <img src={firstval[2].pc} alt="" />
-                        <p>{firstval[2].para}</p>
-                        <ul>
-                            {firstval[2].type.map((secitem, secind) => (
-                                <li key={secind}>{secitem}</li>
-                            ))}
-                        </ul>
-                        <div className="secondbox-button">
-                            <button>View More</button>
-                            <button>Get Quote</button>
-                        </div>
-
-                    </div>
-                    <div className="secondbox secondbox4">
-
-                        <img src={firstval[3].pc} alt="" />
-                        <p>{firstval[3].para}</p>
-                        <ul>
-                            {firstval[3].type.map((secitem, secind) => (
-                                <li key={secind}>{secitem}</li>
-                            ))}
-                        </ul>
-                        <div className="secondbox-button">
-                            <button>View More</button>
-                            <button>Get Quote</button>
-                        </div>
-
-                    </div>
-                    <div className="secondbox secondbox5">
-
-                        <img src={firstval[4].pc} alt="" />
-                        <p>{firstval[4].para}</p>
-                        <ul>
-                            {firstval[4].type.map((secitem, secind) => (
-                                <li key={secind}>{secitem}</li>
-                            ))}
-                        </ul>
-                        <div className="secondbox-button">
-                            <button>View More</button>
-                            <button>Get Quote</button>
-                        </div>
-
-                    </div>
-                    <div className="secondbox secondbox6">
-
-                        <img src={firstval[5].pc} alt="" />
-                        <p>{firstval[5].para}</p>
-                        <ul>
-                            {firstval[5].type.map((secitem, secind) => (
-                                <li key={secind}>{secitem}</li>
-                            ))}
-                        </ul>
-                        <div className="secondbox-button">
-                            <button>View More</button>
-                            <button>Get Quote</button>
-                        </div>
-
-                    </div>
+            {/* Ready to start section */}
+            <div className="ready-start">
+                <h3 className="name-ready">Ready to Start Your Project?</h3>
+                <p className="para-ready">
+                    Let's discuss your project requirements and create something amazing together.
+                </p>
+                <div className="ready-btn">
+                    <button className="start">Start a Project</button>
+                    <button className="start1">View Services</button>
                 </div>
             </div>
-
         </div>
-    )
-}
+    );
+};
+
+export default Portfolio;
