@@ -12,97 +12,79 @@
     --minilightcolor: rgb(49, 62, 80);
 }
 
+/* Navbar Styles */
 .overallnav {
-    height: 60px;
-    width: 100%;
-    background: rgba(20, 33, 51, 0.9); /* transparent white */
-  backdrop-filter: blur(12px); /* blur background */
-  -webkit-backdrop-filter: blur(12px); 
-  position: fixed;
     display: flex;
-    gap: 10px;
-    padding: 10px 10px;
-    color: orange;
-    justify-content: space-around;
-    z-index: 1000;
-
-}
-
-.brandname {
-    
-    display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    font-style: italic;
-    
-}
-
-.navbarlink {
-    
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 40px;
-   
-}
-
-.navbarlink {
-  /* color: white; */
-
-  text-decoration: none;
-  font-weight: 500;
-}
-
-.navlink{
-    
+    padding: 1rem;
+    background-color: #333;
     color: white;
-    font-size: 18px;
+}
+
+/* Brand name styling */
+.brandname h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+/* Navbar links styling */
+.navbarlink {
+    display: flex;
+    gap: 20px;
+}
+
+.navlink {
+    color: white;
     text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
 }
 
-.navlink:hover{
-    color: orangered;
+.navlink:hover {
+    color: #4CAF50;
 }
 
-@media screen and (min-width:600px) and (max-width:900px) {
-  
-    .navbarlink{
-        gap: 10px;
-    }
-    .brandname h1{
-        font-size: 26px;
-    }
-    .navlink {
-        font-size: 15px;
-    }
+/* Hamburger Icon */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 4px;
+    cursor: pointer;
 }
 
-@media screen and (min-width:400px) and (max-width:600px) {
-  
-    .navbarlink{
-        gap: 10px;
-    }
-    .brandname h1{
-        font-size: 13px;
+.hamburger .line {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+}
+
+/* Mobile responsive styles */
+@media screen and (max-width: 768px) {
+    .navbarlink {
+        display: none; /* Hide the links initially */
+        flex-direction: column;
+        width: 100%;
         text-align: center;
+        background-color: #333;
     }
-    .navlink {
-        font-size: 11px;
-    }
-  
-}
 
-@media screen and (min-width:300px) and (max-width:410px) {
-  
-    .navbarlink{
-        gap: 6px;
+    /* When the menu is active, show the links */
+    .navbarlink.active {
+        display: flex;
     }
-    .brandname h1{
-        font-size: 13px;
-        text-align: center;
+
+    .hamburger {
+        display: flex; /* Show hamburger menu on small screens */
     }
+
     .navlink {
-        font-size: 9px;
+        padding: 10px;
+        width: 100%;
+        border-top: 1px solid #444;
     }
-  
+
+    .navlink:hover {
+        color: #4CAF50;
+    }
 }
