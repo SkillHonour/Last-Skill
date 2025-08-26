@@ -11,6 +11,11 @@ export default function Navbar() {
         setIsMobile(!isMobile);
     };
 
+    // Close the menu after clicking a link
+    const closeMenu = () => {
+        setIsMobile(false);
+    };
+
     return (
         <div className="overallnav">
             <div className="brandname">
@@ -26,12 +31,12 @@ export default function Navbar() {
 
             {/* Navbar Links */}
             <div className={`navbarlink ${isMobile ? 'active' : ''}`}>
-                <Link className="navlink" to={'/'}>Home</Link>
-                <Link className="navlink" to={"/service"}>Service</Link>
-                <Link className="navlink" to={"/portfolio"}>Portfolio</Link>
-                <Link className="navlink" to={'/about'}>About</Link>
-                <Link className="navlink" to={'/content'}>Contact</Link>
-                <Link className="navlink" to={'/testimonial'}>Testimonial</Link>
+                <Link className="navlink" to={'/'} onClick={closeMenu}>Home</Link>
+                <Link className="navlink" to={"/service"} onClick={closeMenu}>Service</Link>
+                <Link className="navlink" to={"/portfolio"} onClick={closeMenu}>Portfolio</Link>
+                <Link className="navlink" to={'/about'} onClick={closeMenu}>About</Link>
+                <Link className="navlink" to={'/content'} onClick={closeMenu}>Contact</Link>
+                <Link className="navlink" to={'/testimonial'} onClick={closeMenu}>Testimonial</Link>
             </div>
         </div>
     );

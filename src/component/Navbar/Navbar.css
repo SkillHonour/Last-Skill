@@ -13,12 +13,13 @@
 }
 
 /* Navbar Styles */
+/* Navbar Styles */
 .overallnav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
-    background-color: #333;
+    background-color: #2C3E50; /* Dark Blue */
     color: white;
 }
 
@@ -26,6 +27,7 @@
 .brandname h1 {
     font-size: 24px;
     margin: 0;
+    color: #FF5733; /* Orangish-Red */
 }
 
 /* Navbar links styling */
@@ -42,7 +44,7 @@
 }
 
 .navlink:hover {
-    color: #4CAF50;
+    color: #FF5733; /* Orangish-Red */
 }
 
 /* Hamburger Icon */
@@ -66,7 +68,8 @@
         flex-direction: column;
         width: 100%;
         text-align: center;
-        background-color: #333;
+        background-color: #2C3E50; /* Dark Blue */
+        transition: all 0.3s ease-in-out; /* Smooth transition for opening and closing */
     }
 
     /* When the menu is active, show the links */
@@ -85,6 +88,6 @@
     }
 
     .navlink:hover {
-        color: #4CAF50;
+        color: #FF5733; /* Orangish-Red */
     }
 }
