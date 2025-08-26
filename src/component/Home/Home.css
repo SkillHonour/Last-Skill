@@ -1,0 +1,569 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+:root {
+    --backcolo: rgba(234, 112, 18, 0.964);
+    --color: white;
+    --gray-color-700: rgb(55, 65, 81);
+    --gray-color-800: rgb(31, 41, 55);
+}
+
+/* .firstHome  */
+
+.firsthome {
+    padding-top: 50px;
+    min-height: 100vh;
+    width: 100%;
+    /* background-color: rgb(72, 4, 72); */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+   
+    background-image: url(../../assets/home/homeskillback.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+     /* background-position: 20%; */
+    
+    
+}
+
+.firsthome h1 {
+    font-size: 70px;
+    color: var(--backcolo);
+    font-family: "Merriweather", serif;
+    font-weight: bold;
+
+}
+
+
+.firsthome h1::first-letter {
+    font-size: 2em;
+
+}
+
+
+.firsthome h2 {
+    font-size: 40px;
+    font-weight: 400;
+}
+
+.firsthome h3 {
+    font-size: 25px;
+    font-weight: 500;
+}
+
+.firstpara {
+    width: 60%;
+    text-align: center;
+}
+
+.firstpara p {
+    font-size: 20px;
+    word-spacing: 4px;
+}
+
+.firstbutton {
+    display: flex;
+    gap: 30px;
+}
+
+.firstbutton button+button {
+    border: 2px solid var(--backcolo);
+    color: rgba(234, 112, 18, 0.964);
+    background-color: transparent;
+}
+
+.firstbutton button {
+    font-size: 20px;
+    padding: 11px 30px;
+    border-radius: 30px;
+    background-color: var(--backcolo);
+    color: white;
+    font-weight: 500;
+    border: none;
+}
+
+/* Second homepage  */
+
+.secondhome {
+    min-height: 100vh;
+    width: 100%;
+    /* background-color: lightpink; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    background-color: rgb(31 41 55);
+    padding: 20px 10px;
+}
+
+.secondbox-content {
+    /* padding-top: 20px; */
+    width: 100%;
+    min-height: 600px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+
+}
+
+.secondboxhome {
+    width: 420px;
+    height: 600px;
+    background-color: rgb(60, 71, 86);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    transition: all .6s ease;
+}
+
+.secondboxhome p,
+.secondboxhome h2 {
+    padding: 4px 8px;
+}
+
+.secondboxhome img {
+    height: 40%;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.secondhome button {
+    padding: 8px 30px;
+    border-radius: 25px;
+    font-size: 18px;
+    font-weight: 500;
+    background-color: var(--backcolo);
+    color: var(--color);
+    border: none;
+
+}
+
+
+.secondboxhome ul {
+    margin-left: 20px;
+    list-style: none;
+
+}
+
+.secondboxbutton {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin: 10px;
+    transition: all 1s ease;
+
+}
+
+.secondboxbutton {
+    visibility: hidden;
+    transition: all 1s ease;
+}
+
+.secondboxhome:hover button {
+    visibility: visible;
+}
+
+.secondboxhome:hover {
+    /* margin-bottom: 20px; */
+    scale: 1.03;
+}
+
+
+.secondboxhome ul li::before {
+    content: "✔";
+    /* Tick symbol */
+    color: var(--backcolor);
+    margin-right: 8px;
+    font-weight: 500;
+
+}
+
+.secondboxbutton button+button {
+    background-color: transparent;
+    border: 2px solid var(--backcolor);
+    color: var(--backcolor);
+}
+
+
+/* Thirdhome  */
+
+.thirdhome {
+    min-height: 90vh;
+    width: 100%;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+       background-color: rgb(20, 33, 51);
+}
+
+.thirdhome h1 {
+    font-size: 40px;
+}
+
+.thirdhome h1 span {
+    color: var(--backcolo);
+}
+
+.thirdtopic-para {
+    width: 40%;
+    text-align: center;
+    font-size: 20px;
+}
+
+.thirdbox-content {
+    width: 100%;
+    min-height: 400px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.thirdbox {
+    height: 400px;
+    width: 350px;
+    box-shadow: 5px 5px 5px black;
+    padding: 10px;
+    background-color: var(--gray-color-800);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    transition: all 0.5s ease;
+}
+
+.thirdbox img{
+    height: 180px;
+}
+
+.thirdbox:hover{
+    scale: 1.03;
+}
+
+.thirdbox a {
+    color: var(--backcolor);
+    text-decoration: none;
+}
+
+.thirdhome button {
+    padding: 10px 30px;
+    border-radius: 25px;
+    font-size: 18px;
+    font-weight: 500;
+    background-color: var(--backcolo);
+    color: var(--color);
+    border: none;
+}
+
+
+/* fourhome  */
+
+.fourhome {
+    min-height: 70vh;
+    width: 100%;
+    background-color: rgb(31 41 55);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    justify-content: space-around;
+    padding: 10px;
+}
+
+.fourbox-content {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.fourbox {
+    width: 450px;
+    height: 270px;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: rgb(60, 71, 86);
+}
+
+.fourhandling {
+    display: flex;
+    justify-content: space-around;
+}
+
+.fourhandling h1 {
+    font-size: 24px;
+}
+
+.fourbox img {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+}
+
+.fourhome button {
+    padding: 10px 30px;
+    border-radius: 25px;
+    font-size: 18px;
+    font-weight: 500;
+    background-color: var(--backcolo);
+    color: var(--color);
+    border: none;
+}
+
+
+/* Fivehome  */
+
+.fivehome {
+    width: 100%;
+    min-height: 40vh;
+    background-color: rgb(20, 33, 51);
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+}
+
+.fivehome h1 span {
+    color: var(--backcolo);
+}
+
+.fivetopic-para {
+    width: 60%;
+    text-align: center;
+    font-size: 20px;
+}
+
+.five-numcount {
+    padding-top: 30px;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 20px;
+    display: flex;
+    justify-content: space-around;
+    color: var(--backcolo);
+}
+
+.five-numcount h1 span {
+    font-size: 20px;
+    color: var(--color);
+}
+
+
+/* SixHome  */
+
+.sixhome {
+    width: 100%;
+    min-height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px;
+    padding-bottom: 20px;
+    align-items: center;
+    background-color: var(--backcolo);
+}
+
+.sixhome p {
+    font-size: 20px;
+}
+
+
+.sixhome-button {
+    padding-top: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+
+}
+
+.sixhome-button button {
+    padding: 13px 30px;
+    border-radius: 25px;
+    color: var(--backcolo);
+    background-color: var(--color);
+    font-size: 18px;
+    font-weight: 500;
+    border: none;
+
+}
+
+.sixhome-button button+button {
+    background-color: transparent;
+    color: var(--color);
+    border: 2px solid var(--color);
+}
+
+@media screen and (min-width:370px) and (max-width:600px) {
+    .firsthome h1 {
+        font-size: 40px;
+    }
+
+    .firsthome{
+        background-position: 50%;
+    }
+
+    .firsthome h2 {
+        font-size: 30px;
+    }
+
+    .firsthome h3 {
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .firstbutton button {
+        font-size: 12px;
+        padding: 5px 20px;
+    }
+     .firstpara{
+        width: 100%;
+    }
+
+    .five-numcount {
+        flex-wrap: wrap;
+        gap: 20px;
+       
+    }
+
+    .fivehome h1{
+        font-size: 30px;
+        text-align: center  ;
+    }
+
+    .five-numcount h1{
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .five-numcount h1 span{
+        font-size: 15px;
+    }
+
+    .fivetopic-para{
+        width: 90%;
+    }
+    .sixhome h1{
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .sixhome-button button{
+        padding: 10px 15px;
+        font-size: 15px;
+    }
+    .sixhome-button {
+        gap: 10px;
+    }
+    .thirdtopic-para{
+        width: 100%;
+        padding: 5px;
+    }
+}
+
+@media screen and (min-width:300px) and (max-width:370px) {
+    .firsthome h1 {
+        font-size: 40px;
+    }
+
+     .firsthome{
+        background-position: 50%;
+    }
+
+    .firsthome h2 {
+        font-size: 30px;
+    }
+
+    .firsthome h3 {
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .firstbutton button {
+        font-size: 12px;
+        padding: 5px 20px;
+    }
+    .firstpara{
+        width: 100%;
+    }
+
+    .thirdbox{
+        width: 100%;
+    }
+
+    
+    .fourbox{
+        width: 100%;
+        min-height: 360px;
+    }
+
+    .five-numcount {
+        flex-wrap: wrap;
+        gap: 20px;
+       
+    }
+
+    .fivehome{
+        padding: 20px 10px;
+    }
+
+    .fivehome h1{
+        font-size: 25px;
+        text-align: center  ;
+    }
+
+    .five-numcount h1{
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .five-numcount h1 span{
+        font-size: 15px;
+    }
+
+    .fivetopic-para{
+        width: 90%;
+    }
+    .sixhome h1{
+        font-size: 25px;
+        text-align: center;
+    }
+
+    .sixhome-button button{
+        padding: 10px 15px;
+        font-size: 15px;
+    }
+    .sixhome-button {
+        gap: 10px;
+    }
+      .thirdtopic-para{
+        width: 100%;
+        padding: 5px;
+    }
+
+}

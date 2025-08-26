@@ -1,0 +1,16 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+
+}
+
+:root {
+    --backcolor: rgba(234, 112, 18, 0.964);
+    --color: white;
+     --darkcolor:rgb(20, 33, 51);
+    --lightcolor:rgb(32, 44, 61);
+    --minilightcolor: rgb(49, 62, 80);
+}
+
+  
