@@ -111,7 +111,7 @@ export default function Footer() {
               <span>
                 <FaLocationDot />
               </span>{" "}
-            Chennai,Tamil Nadu , <Chennai></Chennai>
+            Chennai,Tamil Nadu ,
             </p>
             <p className="link">
               <span>
