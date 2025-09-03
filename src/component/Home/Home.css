@@ -15,7 +15,7 @@
 
 .firsthome {
     padding-top: 50px;
-    min-height: 100vh;
+    min-height:90vh;
     width: 100%;
     /* background-color: rgb(72, 4, 72); */
     display: flex;
@@ -423,9 +423,11 @@
     .firsthome h1 {
         font-size: 40px;
     }
-
+ 
     .firsthome{
         background-position: 50%;
+        min-height: 45vh;
+
     }
 
     .firsthome h2 {
@@ -493,6 +495,7 @@
 
      .firsthome{
         background-position: 50%;
+        min-height: 45vh;
     }
 
     .firsthome h2 {
