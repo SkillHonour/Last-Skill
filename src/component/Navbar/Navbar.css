@@ -1,93 +1,111 @@
 * {
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 :root {
-    --backcolor: rgba(234, 112, 18, 0.964);
-    --color: white;
-     --darkcolor:rgb(20, 33, 51);
-    --lightcolor:rgb(32, 44, 61);
-    --minilightcolor: rgb(49, 62, 80);
+  --backcolor: rgba(234, 112, 18, 0.964); /* Orange Accent */
+  --color: white;
+  --darkcolor: rgb(20, 33, 51);
+  --lightcolor: rgb(32, 44, 61);
+  --minilightcolor: rgb(49, 62, 80);
 }
 
-/* Navbar Styles */
-/* Navbar Styles */
+/* Navbar Container */
 .overallnav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem;
-    background-color: #2C3E50; /* Dark Blue */
-    color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: var(--darkcolor);
+  color: var(--color);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
-/* Brand name styling */
+/* Brand */
 .brandname h1 {
-    font-size: 24px;
-    margin: 0;
-    color: #FF5733; /* Orangish-Red */
+  font-size: 24px;
+  color: var(--backcolor);
+  font-weight: bold;
+  cursor: pointer;
 }
 
-/* Navbar links styling */
+/* Navbar Links */
 .navbarlink {
-    display: flex;
-    gap: 20px;
+  display: flex;
+  gap: 20px;
+  list-style: none;
 }
 
-.navlink {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-    transition: color 0.3s ease;
+.navbarlink li a {
+  color: var(--color);
+  text-decoration: none;
+  font-size: 18px;
+  padding: 8px 14px;
+  border-radius: 6px;
+  transition: 0.2s;
 }
 
-.navlink:hover {
-    color: #FF5733; /* Orangish-Red */
+.navbarlink li a:hover {
+  background: var(--color);
+  color: var(--backcolor);
 }
 
-/* Hamburger Icon */
+/* Hamburger */
 .hamburger {
-    display: none;
+  display: none;
+  font-size: 1.8rem;
+  color: var(--color);
+  cursor: pointer;
+  z-index: 2001;
+}
+
+/* Tablet Responsive (901px–1200px) */
+@media screen and (max-width: 1200px) and (min-width: 901px) {
+  .brandname h1 {
+    font-size: 20px;
+  }
+  .navbarlink {
+    gap: 15px;
+  }
+  .navbarlink li a {
+    font-size: 16px;
+    padding: 6px 10px;
+  }
+}
+
+/* Mobile Responsive */
+@media screen and (max-width: 900px) {
+  .navbarlink {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 70%;
+    height: 100vh;
+    background: rgba(20, 33, 51, 0.9); /* Semi-dark overlay */
+    backdrop-filter: blur(5px); /* Premium blur effect */
     flex-direction: column;
-    gap: 4px;
-    cursor: pointer;
-}
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    transition: right 0.4s ease-in-out;
+  }
 
-.hamburger .line {
-    width: 25px;
-    height: 3px;
-    background-color: white;
-}
+  .navbarlink.active {
+    right: 0;
+  }
 
-/* Mobile responsive styles */
-@media screen and (max-width: 768px) {
-    .navbarlink {
-        display: none; /* Hide the links initially */
-        flex-direction: column;
-        width: 100%;
-        text-align: center;
-        background-color: #2C3E50; /* Dark Blue */
-        transition: all 0.3s ease-in-out; /* Smooth transition for opening and closing */
-    }
+  .navbarlink li a {
+    font-size: 22px;
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+  }
 
-    /* When the menu is active, show the links */
-    .navbarlink.active {
-        display: flex;
-    }
-
-    .hamburger {
-        display: flex; /* Show hamburger menu on small screens */
-    }
-
-    .navlink {
-        padding: 10px;
-        width: 100%;
-        border-top: 1px solid #444;
-    }
-
-    .navlink:hover {
-        color: #FF5733; /* Orangish-Red */
-    }
+  .hamburger {
+    display: block;
+  }
 }
